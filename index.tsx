@@ -1,20 +1,33 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function Home() {
+export default function GrammarHome() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>📚 Learn English</Text>
-      <Link href="./phrases" style={styles.link}>Phrases</Link>
-      <Link href="./grammar" style={styles.link}>Grammar</Link>
-      <Link href="./phrasalverb" style={styles.link}>Phrasal Verbs</Link>
-      <Link href="../idiomphrases" style={styles.link}>Idiom Phrases</Link>
+      <Text style={styles.title}>Grammar Topics</Text>
+      <Link href="/phrases/agree" style={styles.link}>✅ agree</Link>
+      <Link href="/phrases/conversation" style={styles.link}>💪 conversation</Link>
+      <Link href="/phrases/discussion" style={styles.link}>🤔 discussion</Link>
+      <Link href="/phrases/goodbye" style={styles.link}>🌟 goodbye</Link>
+      <Link href="/phrases/greeting" style={styles.link}>📝 greeting</Link>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center" },
-  title: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
-  link: { fontSize: 18, color: "blue", marginVertical: 5 },
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+  link: {
+    fontSize: 18,
+    color: "blue",
+    marginVertical: 5,
+  },
 });
