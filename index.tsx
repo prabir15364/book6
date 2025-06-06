@@ -1,15 +1,24 @@
 import { Link } from "expo-router";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function GrammarHome() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Grammar Topics</Text>
-      <Link href="/idiomphrases/page1" style={styles.link}>✅ page1</Link>
-      <Link href="/idiomphrases/page2" style={styles.link}>💪 page2</Link>
-      <Link href="/idiomphrases/page3" style={styles.link}>🤔 page3</Link>
-      <Link href="/idiomphrases/page4" style={styles.link}>🌟 page4</Link>
-      <Link href="/idiomphrases/page5" style={styles.link}>📝 page5</Link>
+      <Link href={"/grammar/Used_to" as any} style={styles.link}>✅ used to</Link>
+      <Link href={"/grammar/Must" as any} style={styles.link}>💪 Must</Link>
+      <Link href={"/grammar/SupposedTo" as any} style={styles.link}>🤔 supposed to</Link>
+      <Link href={"/grammar/could" as any} style={styles.link}>🤔 could</Link>
+      <Link href={"/grammar/preposition" as any} style={styles.link}>📝 preposition</Link>
+      <Link href={"/grammar/Would" as any} style={styles.link}>📝 would</Link>
+      <Link href={"/grammar/Dare" as any} style={styles.link}>📝 dare</Link>
+      <Link href={"/grammar/May" as any} style={styles.link}>📝 may</Link>
+      <Link href={"/grammar/OughtTo" as any} style={styles.link}>📝 ought to</Link>
+      <Link href={"/grammar/SupposedTo" as any} style={styles.link}>📝 supposed to</Link>
+      <Link href={"/grammar/Might" as any} style={styles.link}>📝 might</Link>
+      <Link href={"/grammar/Shall_Will" as any} style={styles.link}>📝 shall/will</Link>
+      <Link href={"/grammar/Need" as any} style={styles.link}>📝 need</Link>
+      <Link href={"/grammar/Should" as any} style={styles.link}>📝 should</Link>
     </View>
   );
 }
