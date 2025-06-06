@@ -5,11 +5,11 @@ export default function GrammarHome() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Grammar Topics</Text>
-      <Link href="/phrasalverb/come" style={styles.link}>✅ come</Link>
-      <Link href="/phrasalverb/get" style={styles.link}>💪 get</Link>
-      <Link href="/phrasalverb/go" style={styles.link}>🤔 go</Link>
-      <Link href="/phrasalverb/put" style={styles.link}>🌟 put</Link>
-      <Link href="/phrasalverb/take" style={styles.link}>📝 take</Link>
+      <Link href="/idiomphrases/page1" style={styles.link}>✅ page1</Link>
+      <Link href="/idiomphrases/page2" style={styles.link}>💪 page2</Link>
+      <Link href="/idiomphrases/page3" style={styles.link}>🤔 page3</Link>
+      <Link href="/idiomphrases/page4" style={styles.link}>🌟 page4</Link>
+      <Link href="/idiomphrases/page5" style={styles.link}>📝 page5</Link>
     </View>
   );
 }
